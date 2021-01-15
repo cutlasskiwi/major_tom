@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+/*STARTING PAGE, MOBILE*/
+#menu-button {
+    position: fixed;
+    z-index: 6;
+    right: 1em;
+    top: .8em;
+    cursor: pointer;
+    color: #000000;
+    filter: drop-shadow(3px 3px 0 rgba(250, 250, 250, .6));
+}
+
+.menu-open {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    right: 0em;
+    top: 0em;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100vh;
+    width: 100vw;
+    padding-top: 7em;
+    justify-content: center;
+}
+
+.menu-closed {
+    display: none;
+}
+
+.menu-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.8em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    text-shadow: 0px 5px 0px #BBB;
+    /*filter: drop-shadow(0px 5px 0px #BBB);*/
+    margin-bottom: 1.3em;
+}
+
+.menu-link:last-child {
+    margin-bottom: 3.5em;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.firstpage {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 100%;
+    background: url("../img/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
+}
+
+.header-container {
+    position: absolute;
+    outline: solid black 4px;
+    width: 9em;
+    height: 10em;
+    top: 4em;
+    left: 3em;
+    padding: .62em;
+}
+
+.header-h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.2em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.header-paragraf {
+    font-weight: 300;
+    font-size: 0.6em;
+    margin-top: .7em;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.fas.arrow-down {
+    color: #ffffff;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+/*SECOND PAGE, MOBILE*/
+.secondpage-container {
+    display: flex;
+    background: url("../img/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondpage {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.space-ventures {
+    margin: 2em auto 2.1em 2.1em;
+}
+
+.space {
+    color: #ffffff;
+    font-size: 2.8em;
+    filter: drop-shadow(0px 2px 3px #000000);
+}
+
+.ventures {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    margin: -.65em 0 0 .75em;
+}
+
+.major-tom {
+    padding: 0 2.1em;
+}
+
+.tom-h3 {
+    color: #ffffff;
+    margin-bottom: 1em;
+}
+
+.tom-paragraf {
+    color: #ffffff;
+    font-size: .64em;
+    font-weight: 300;
+    margin-top: .2em;
+    line-height: 1.6em;
+}
+
+.quote {
+    color: #ffffff;
+    font-size: .8em;
+    padding: 1.5em 3em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote2 {
+    visibility: hidden;
+}
+
+.DB-major-tom {
+    display: none;
+}
+
+.far-above-desktop {
+    display: none;
+
+}
+
+.far-above-mobile {
+    display: inline-block;
+}
+
+.read-more {
+    color: #d200a1;
+    font-size: .55em;
+}
+
+/*Cookie*/
+.cookie {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    background-color: #041036;
+    padding: .5em 2.1em;
+    flex: 1;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cookie-p {
+    color: #d200a1;
+    font-size: .5em;
+    padding-right: 2em;
+    text-shadow: 0 0 3px #e302af;
+}
+
+.cookie-btn {
+    background-color: #041b61;
+    color: #ffffff;
+    font-size: 0.6em;
+    border: none;
+    text-transform: uppercase;
+}
+
+/*DESKTOP VERSION*/
+@media (min-width: 1280px) {
+    /*MENU*/
+    .menu-link {
+        margin-bottom: 3em;
+        font-size: 3.5em;
+        width: 7em;
+        margin: auto;
+    }
+    .menu-link:last-child {
+        margin-bottom: 5em;
+    }
+    .menu-link-underline {
+        display: inline-block;
+        border-radius: 10px;
+        height: 10px;
+        line-height: 1em;
+    }
+    .menu-link:hover > .menu-link-underline {
+        box-shadow: 0 55px 0 0 #d200a1;
+    }
+    /*FIRST PAGE, DESKTOP*/
+    .header-container {
+        width: 32em;
+        height: 31em;
+        background-color: rgba(255, 255, 255, 0.4);
+        top: 6em;
+        left: 15em;
+        outline: solid 6px #000000;
+    }
+    .header-h1 {
+        font-size: 7em;
+        margin-top: .5em;
+    }
+    .header-paragraf {
+        font-size: 1.2em;
+        margin: 6em 0 0 15em;
+    }
+    @keyframes slideHeader {
+        from {
+            margin-left: 1em;
+            color: #000000
+        }
+        to {
+            margin-left: 2em;
+            color: #000000;
+        }
+    }
+    .header-link:hover + #header-arrow {
+        animation-name: slideHeader;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    /*SECOND PAGE, DESKTOP*/
+    .secondpage {
+        flex-flow: column wrap;
+    }
+    .left{
+        flex-basis: 100%;
+        width: 44em;
+    }
+    .right{
+        width: 44em;
+    }
+    .space-ventures {
+        margin: 4em auto 4em 5em;
+    }
+    .space {
+        font-size: 8em;
+    }
+    .ventures {
+        font-size: 10em;
+        margin: -.55em 0 0 0;
+    }
+    .tom-h3{
+        font-size: 1.5em;
+        margin-left: 2.8em;
+    }
+    .tom-paragraf {
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-left: 4em;
+        line-height: 1.7em;
+        margin-top: 1em;
+    }
+    .quote {
+        padding: 1.5em .6em 0 3.5em;
+        font-size: 1.8em;
+    }
+    .fa-quote-right {
+        position: absolute;
+        color: rgba(255, 255, 255, 0.2);
+        margin: -.5em -0.1em 0 -.3em;
+        font-size: 1.5em;
+    }
+    .fa-quote-left {
+        position: absolute;
+        color: rgba(255, 255, 255, 0.2);
+        margin:  .13em 0 0 -.6em;
+        font-size: 1.5em;
+    }
+    .quote2 {
+        visibility: visible;
+        color: #000;
+        font-size: 2.7em;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.2em;;
+        margin: 4.2em 0 1em 2.4em;
+        padding-right: 4.3em;
+        background-color: rgba(0,0,0,.5);
+        background-image: linear-gradient(165deg, rgba(210,0,161,.4), rgba(255,255,255,.4), rgba(210,0,161,.4));
+        background-size: 70%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+    .DB-major-tom {
+        display: inline;
+        width: 6em;
+        float: right;
+    }
+
+    .far-above-desktop {
+        display: inline-block;
+
+    }
+
+    .far-above-mobile {
+        display: none;
+    }
+
+    .read-more {
+        margin-left: 4em;
+        font-size: 1.1em;
+    }
+    .last-line {
+        margin-bottom: 1.1em;
+    }
+    .fas.fa-arrow-right {
+        margin-left: 1em;
+    }
+    @keyframes slide {
+        from {
+            margin-left: 1em;
+            color: #d200a1
+        }
+        to {
+            margin-left: 3em;
+            color: #FFF;
+        }
+    }
+    .read-more:hover + .fas.fa-arrow-right {
+        animation-name: slide;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    /*COOKIE, DESKTOP*/
+    .cookie-p {
+        font-size: 1.1em;
+        padding-top: .5em;
+        text-shadow: 0 0 3px #e302af;
+    }
+    .cookie-btn {
+        font-size: 1.1em;
+        padding: .5em;
+    }
+}

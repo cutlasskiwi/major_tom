@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--MENU-->
+  <div id="menu-button"><i class="fas fa-bars fa-3x"></i></div>
+  <nav class="menu">
+    <div class="menu-open menu-closed">
+      <a href="" class="menu-link">
+        <div class="menu-link-underline">Our story
+        </div>
+      </a>
+      <a href="" class="menu-link">
+        <div class="menu-link-underline">Space</div> <div class="menu-link-underline">Ventures</div> 
+      </a>
+      <a href="" class="menu-link">
+        <div class="menu-link-underline">About</div><div class="menu-link-underline">Major Tom</div> 
+      </a>
+      </div>
+    </div>
+  </nav>
+  <!--MENU END-->
+
+  <main class="container">
+  <!--FIRST PAGE-->
+    <section class="firstpage">
+      <div class="header-container">
+        <h1 class="header-h1">To the moon</h1>
+        <p class="header-paragraf"><a href="" class="header-link">Read our story </a><i class="fas fa-arrow-right" id="header-arrow"></i></p>
+      </div>
+      <i class="fas arrow-down fa-arrow-down fa-2x"></i>
+    </section>
+  <!--FIRST PAGE END-->
+
+  <!--SECOND PAGE-->
+    <div class="secondpage-container">
+      <section class="secondpage">
+        <div class="left">
+          <!--SPACE VENTURE-->
+          <div class="space-ventures">
+            <h1 class="space">Space</h1>
+            <h1 class="ventures">Ventures</h1>
+          </div>
+          <!--FIRST TWO PARAGRAFS + QUOTE-->
+          <div class="major-tom">
+            <h3 class="tom-h3">Ground Control to Major Tom</h3>
+            <p class="tom-paragraf">Ground Control to Major Tom, Take your protein pills and put your helmet on. Ground control to Major Tom (ten, nine, eight, seven, six). Commencing countdown, engines on (five, four, three). Check ignition and may God's love be with you (two, one, liftoff). This is ground control to major Tom.</p>
+            <p class="tom-paragraf"> You've really made the grade. And the papers want to know whose shirts you wear. Now it's time to leave the capsule if you dare. This is Major Tom to Ground Control. I'm stepping through the door.</p>
+            <p class="quote"><i class="fas fa-quote-right"></i>And I'm floating in a most peculiar way. And the stars look very different today. For here.<i class="fas fa-quote-left"></i></p>
+          </div> <!--MAJOR TOM CLOSING DIV-->
+        </div> <!--LEFT CLOSING DIV-->
+        <!--REST OF MAJOR TOM PARAGRAFS AND SECOND QUOTE-->
+        <div class="right">
+          <div class="quote2"><p>Persistence is very important. You should not give up unless you are forced to give up.</p></div>
+          <div class="major-tom">
+            <p class="tom-paragraf">Am I sitting in a tin can. Far above the world. Planet Earth is blue. And there's nothing I can do. Though I'm past one hundred thousand miles. I'm feeling very still. And I think my <img src="img/major_tom.jpg" alt="Astronaut David Bowie" class="DB-major-tom">spaceship knows which way to go. Tell my wife I love her very much she knows.</p>
+            <p class="tom-paragraf">Ground Control to Major Tom. Your circut's dead, there's something wrong. Can you hear me, Major Tom? Can you hear me, Major Tom? Can you "Here am I floating 'round my tin can.&nbsp<span class="far-above-desktop">Far above the moon.</span></span></p>
+            <p class="tom-paragraf far-above-mobile">Far above the moon</p>
+            <p class="tom-paragraf">Planet Earth is blue</p>
+            <p class="tom-paragraf last-line">And there's nothing I can do</p>
+            <a href="" class="read-more">Read more about Major Tom</a><i class="fas fa-arrow-right read-more"></i>
+          </div><!--MAJOR TOM CLOSING DIV-->
+        </div> <!--RIGHT CLOSING DIV-->
+        <!--COOKIE PART-->
+        <div class="cookie">
+          <p class="cookie-p">I don't know where I'm going from here, but I promise it won't be boring. You should accept cookies.</p>
+          <button class="cookie-btn">Accept</button>
+        </div>
+      </section>
+    </div> <!--"SECONDPAGE-CONTAINER CLOSING DIV-->
+  <!--SECOND PAGE END-->
+  </main>
+<script src="https://kit.fontawesome.com/6d8fa96587.js" crossorigin="anonymous"></script>
+<script>
+  const menu = document.querySelector('.menu-open');
+  const header = document.querySelector('.header-container');
+  const arrow = document.querySelector('.arrow-down');
+  const menuBtn = document.querySelector('#menu-button');
+  const secondPage = document.querySelector('.secondpage');
+  const cookieBtn = document.querySelector('.cookie-btn');
+  const cookie = document.querySelector('.cookie');
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('menu-closed');
+    header.classList.toggle('hide');
+    arrow.classList.toggle('hide');
+    secondPage.classList.toggle('hide');
+  });
+  cookieBtn.addEventListener('click', () => {
+    cookie.classList.toggle('hide');
+  });
+  </script>
+</body>
+
+</html>
